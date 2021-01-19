@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>php-noise.com</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A script for generating (random) noise background images."/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="keywords" content="php, noise, image, images, generator, background-image, background, php-gd"/>
+    <meta name="author" content="RundesBalli"/>
+    <meta name="revisit-after" content="3 days"/>
+    <link href="/src/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/src/favicon.png" type="image/png">
+    <meta name="theme-color" content="#333333">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Noise-Generator!</h1>
+      <section>
+        <h2>Parameters</h2>
+        <div class="row">
+          <div class="col-s-12 col-l-6">Red</div>
+          <div class="col-s-12 col-l-6"><input type="number" min="0" max="255" step="1" id="r" placeholder="Red (0-255)"></div>
+        </div>
+        <div class="row">
+          <div class="col-s-12 col-l-6">Green</div>
+          <div class="col-s-12 col-l-6"><input type="number" min="0" max="255" step="1" id="g" placeholder="Green (0-255)"></div>
+        </div>
+        <div class="row">
+          <div class="col-s-12 col-l-6">Blue</div>
+          <div class="col-s-12 col-l-6"><input type="number" min="0" max="255" step="1" id="b" placeholder="Blue (0-255)"></div>
+        </div>
+        <div class="row">
+          <div class="col-s-12 col-l-6">Number of Tiles (1-50)</div>
+          <div class="col-s-12 col-l-6"><input type="number" min="1" max="50" step="1" id="tiles" placeholder="Number of tiles (1-50)"></div>
+        </div>
+        <div class="row">
+          <div class="col-s-12 col-l-6">Tilesize in px (1-20)</div>
+          <div class="col-s-12 col-l-6"><input type="number" min="1" max="20" step="1" id="tileSize" placeholder="Tilesize in px (1-20)"></div>
+        </div>
+        <div class="row">
+          <div class="col-s-12 col-l-6">Borderwidth in px (1-15)</div>
+          <div class="col-s-12 col-l-6"><input type="number" min="1" max="15" step="1" id="borderWidth" placeholder="Borderwidth in px (1-15)"></div>
+        </div>
+        <div class="row">
+          <div class="col-s-0 col-l-6"></div>
+          <div class="col-s-12 col-l-6"><button type="button" id="submit">Noise!</button></div>
+        </div>
+      </section>
+      <section id="download">
+        <h2>Download</h2>
+        <div class="row center">
+          <div class="col-s-12 col-l-12"><a href="#" id="downloadlink" target="_blank">Download!</a></div>
+          <div class="col-s-12 col-l-12 note">The file is only stored 10 minutes!</div>
+        </div>
+      </section>
+    </div>
+    <div class="footer">
+      <a href="https://rundesballi.com/" target="_blank" rel="noopener">RundesBalli.com</a><a href="https://rundesballi.com/imprint" target="_blank" rel="noopener">Imprint</a><a href="https://github.com/RundesBalli/php-noise" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <script type="text/javascript" src="/src/updateBG.js"></script>
+  </body>
+</html>
