@@ -1,2 +1,2 @@
-# php-noise.com
-:globe_with_meridians: The homepage for the php-noise project
+# :globe_with_meridians: php-noise.com
+The homepage for the php-noise project
