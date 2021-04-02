@@ -31,6 +31,10 @@
           <div class="col-s-12 col-l-6"><input type="number" min="0" max="255" step="1" id="b" placeholder="Blue (0-255), default: Random"></div>
         </div>
         <div class="row">
+          <div class="col-s-12 col-l-6">HEX <span class="note">without #</span><br><span class="note">either RGB or HEX, not both</span></div>
+          <div class="col-s-12 col-l-6"><input type="text" id="hex" placeholder="HEX (000000-FFFFFF), default: None, RGB above" pattern="(?:(?:[0-9a-fA-F]{2}){3}|(?:[0-9a-fA-F]){3})"></div>
+        </div>
+        <div class="row">
           <div class="col-s-12 col-l-6">Number of Tiles (1-50)</div>
           <div class="col-s-12 col-l-6"><input type="number" min="1" max="50" step="1" id="tiles" placeholder="Number of tiles (1-50), default: 50"></div>
         </div>
