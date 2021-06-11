@@ -58,6 +58,10 @@ a:hover, a:focus {
   font-size: 12px;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .footer {
   position: absolute;
   bottom: 0px;
