@@ -105,10 +105,8 @@ input:not([type=radio]), button {
 .wrapper {
   max-width: 800px;
   width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 30px auto;
+  background-color: rgba(222, 222, 222, 0.8); /* #dedede */
 }
 
 section .row:not(:last-child) {
@@ -131,11 +129,9 @@ section .row:not(:last-child) {
   .wrapper {
     max-width: 100%;
     width: 100%;
-    margin: 15px 0px 0px;
-    top: auto;
-    left: auto;
+    margin: 0px;
     transform: none;
-    padding: 0px 0px 15px;
+    padding: 10px 7px 30px;
   }
 
   .footer {
@@ -167,7 +163,6 @@ section .row:not(:last-child) {
 @media only screen and (min-width: 501px) {
   .wrapper{
     border: 1px solid #333333;
-    background-color: rgba(222, 222, 222, 0.3); /* #dedede */
     border-radius: 20px;
     padding: 20px;
   }
