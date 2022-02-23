@@ -63,7 +63,7 @@ a:hover, a:focus {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   width: 100%;
   font-size: 10px;
@@ -73,14 +73,23 @@ a:hover, a:focus {
   padding: 5px;
 }
 
-.footer > a {
-  color: #dedede;
-  text-decoration: none;
-  margin: 0px 7px;
-  transition: all 0.25s;
+.footer > span {
+  margin: 0px 10px;
+  display: inline-block;
 }
 
-.footer > a:hover, .footer > a:focus {
+.footer > span > a {
+  color: #dedede;
+  text-decoration: none;
+  transition: all 0.25s;
+  padding: 0px 5px;
+}
+
+.footer > span > a:not(:first-child) {
+  border-left: 1px solid #dedede;
+}
+
+.footer > span > a:hover, .footer > a:focus {
   color: #ff6600;
   text-decoration: underline;
 }
@@ -131,6 +140,10 @@ section .row:not(:last-child) {
 
   .footer {
     position: fixed;
+  }
+
+  .footer > span {
+    display: block;
   }
 
   [class*="col-"] {
