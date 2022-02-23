@@ -85,7 +85,7 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-input, button {
+input:not([type=radio]), button {
   width: 100%;
   border: 1px solid #333333;
   color: #333333;
