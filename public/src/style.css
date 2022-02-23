@@ -188,3 +188,8 @@ section .row:not(:last-child) {
 #download {
   display: none;
 }
+
+#downloadImage {
+  border: 1px solid #333333;
+  max-width: 100%;
+}

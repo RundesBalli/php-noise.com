@@ -8,7 +8,9 @@ let changeBg = (r, g, b, hex, tiles, tileSize, borderWidth, mode) => {
         .then(data => {
             document.body.style.background = `url("${data.uri}") repeat center center`;
             document.getElementById("download").style.display = "block";
-            document.getElementById("downloadlink").setAttribute("href", data.uri);
+            document.getElementById("downloadLink").setAttribute("href", data.uri);
+            document.getElementById("downloadLinkImage").setAttribute("href", data.uri);
+            document.getElementById("downloadImage").setAttribute("src", data.uri);
         });
 };
 
