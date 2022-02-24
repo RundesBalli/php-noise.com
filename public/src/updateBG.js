@@ -2,8 +2,8 @@
 
 // NullDev 4 RundesBalli <3
 
-let changeBg = (r, g, b, hex, tiles, tileSize, borderWidth, mode) => {
-    fetch(`https://php-noise.com/noise.php?r=${r}&g=${g}&b=${b}&hex=${hex}&tiles=${tiles}&tileSize=${tileSize}&borderWidth=${borderWidth}&mode=${mode}&json`, { mode: "cors" })
+let changeBg = (r, g, b, hex, tiles, tileSize, borderWidth, mode, multi, steps) => {
+    fetch(`https://php-noise.com/noise.php?r=${r}&g=${g}&b=${b}&hex=${hex}&tiles=${tiles}&tileSize=${tileSize}&borderWidth=${borderWidth}&mode=${mode}&multi=${multi}&steps=${steps}&json`, { mode: "cors" })
         .then(res => res.json())
         .then(data => {
             document.body.style.background = `url("${data.uri}") repeat center center`;
@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("tiles").value,
             document.getElementById("tileSize").value,
             document.getElementById("borderWidth").value,
-            document.querySelector('input[name="mode"]:checked').value
+            document.querySelector('input[name="mode"]:checked').value,
+            document.getElementById("multi").value,
+            document.getElementById("steps").value
         );
     });
 });

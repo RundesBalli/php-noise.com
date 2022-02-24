@@ -51,7 +51,15 @@
         </div>
         <div class="row">
           <div class="col-s-12 col-l-6">Color calculation mode</div>
-          <div class="col-s-12 col-l-6"><input type="radio" id="mode-b" name="mode" value="brightness" checked="checked"><label for="mode-b">Brightness <span class="note">(more shades of your color)</span></label><br><input type="radio" id="mode-a" name="mode" value="around"><label for="mode-a">Around <span class="note">(more colorful)</span></label></div>
+          <div class="col-s-12 col-l-6"><input type="radio" id="mode-b" name="mode" value="brightness" checked="checked"><label for="mode-b">Brightness¹ <span class="note">(more shades of your color)</span></label><br><input type="radio" id="mode-a" name="mode" value="around"><label for="mode-a">Around <span class="note">(more colorful)</span></label></div>
+        </div>
+        <div class="row">
+          <div class="col-s-12 col-l-6">¹Brightness multiplicator<br><span class="note">Percentage spacing between colors</span></div>
+          <div class="col-s-12 col-l-6"><input type="number" min="0.1" step="0.1" id="multi" placeholder="Brightness multiplicator (min: 0.1), default: 1.5"></div>
+        </div>
+        <div class="row">
+          <div class="col-s-12 col-l-6">¹Brightness steps<br><span class="note">Colors above and below the reference color</span></div>
+          <div class="col-s-12 col-l-6"><input type="number" min="1" max="50" step="1" id="steps" placeholder="Brightness steps (1-50), default: 5"></div>
         </div>
         <div class="row">
           <div class="col-s-0 col-l-6"></div>
