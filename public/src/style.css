@@ -107,6 +107,7 @@ input:not([type=radio]), button {
   width: 100%;
   margin: 30px auto;
   background-color: rgba(222, 222, 222, 0.8); /* #dedede */
+  box-shadow: 5px 5px 15px 5px #333333;
 }
 
 section .row:not(:last-child) {
