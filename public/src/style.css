@@ -159,6 +159,10 @@ section .row:not(:last-child) {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+
+  .note {
+    word-wrap: break-word;
+  }
 }
 
 @media only screen and (min-width: 501px) {
