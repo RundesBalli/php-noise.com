@@ -10,7 +10,7 @@ html, body {
 
 body {
   background-color: #333333;
-  background-image: url("/src/bg.png");
+  background-image: url("/assets/images/bg.png");
 }
 
 * {
@@ -190,11 +190,19 @@ section .row:not(:last-child) {
   .col-l-12 {width: 100%;}
 }
 
-#download {
+#download, #base64 {
   display: none;
 }
 
 #downloadImage {
   border: 1px solid #333333;
   max-width: 100%;
+}
+
+#base64String {
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid #333333;
+  padding: 10px;
 }

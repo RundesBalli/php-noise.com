@@ -3,7 +3,7 @@
 // NullDev 4 RundesBalli <3
 
 let changeBg = (r, g, b, hex, tiles, tileSize, borderWidth, mode, multi, steps) => {
-    fetch(`https://php-noise.com/noise.php?r=${r}&g=${g}&b=${b}&hex=${hex}&tiles=${tiles}&tileSize=${tileSize}&borderWidth=${borderWidth}&mode=${mode}&multi=${multi}&steps=${steps}&json`, { mode: "cors" })
+    fetch(`https://php-noise.com/noise.php?r=${r}&g=${g}&b=${b}&hex=${hex}&tiles=${tiles}&tileSize=${tileSize}&borderWidth=${borderWidth}&mode=${mode}&multi=${multi}&steps=${steps}&json&base64`, { mode: "cors" })
         .then(res => res.json())
         .then(data => {
             document.body.style.background = `url("${data.uri}") repeat center center`;
@@ -11,6 +11,8 @@ let changeBg = (r, g, b, hex, tiles, tileSize, borderWidth, mode, multi, steps) 
             document.getElementById("downloadLink").setAttribute("href", data.uri);
             document.getElementById("downloadLinkImage").setAttribute("href", data.uri);
             document.getElementById("downloadImage").setAttribute("src", data.uri);
+            document.getElementById("base64").style.display = "block";
+            document.getElementById("base64String").textContent = data.base64;
         });
 };
 
